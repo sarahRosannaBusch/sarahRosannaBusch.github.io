@@ -1,0 +1,130 @@
+* /* padding and border are included in total width and height of elements */
+{
+    box-sizing: border-box;
+}
+
+/****************************** Body Styles *********************************/
+
+body
+{
+  font-family: monospace;
+  margin: 0px;
+  background-color: dimgrey;
+}
+
+/****************************** Profile **************************************/
+
+div#profile
+{
+  background-color: lavender;
+  width: 100%;
+}
+
+div#profilePic
+{
+  width: 80%;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+table
+{
+  width: 90%;
+  margin: auto;
+}
+
+th
+{
+  text-align: right;
+  padding: 2px;
+  font-size: 18px;
+  color: indigo;
+  border-width: thin;
+  border-color: silver;
+  border-bottom-style: solid;
+}
+
+td
+{
+  padding: 2px;
+  font-size: 14px;
+  color: black;
+  border-width: thin;
+  border-color: silver;
+  border-bottom-style: solid;
+}
+
+/******************************* Links ***************************************/
+
+div#links
+{
+  width: 90%;
+  margin: auto;
+}
+
+p#intro
+{
+  font-size: 18px;
+  font-family: cursive;
+  background-color: transparent;
+  color: lavender;
+}
+
+p.p
+{
+  display: none;
+}
+
+p.visible
+{
+  display: inline-block;
+  color: lavender;
+  margin: 0px;
+  font-size: 16px;
+  font-family: monospace;
+  text-align: justify;
+}
+
+a.a:link
+{
+  font-size: 26px;
+  text-decoration: none;
+  color: lavender;
+  font-family: fantasy;
+}
+
+a.a:visited
+{
+  text-decoration: none;
+  color: lavender;
+}
+
+a.a:hover
+{
+  text-shadow: 2px 2px indigo;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+  div#profile
+  {
+    max-width: 375px;
+    float: left;
+    margin: 20px;
+  }
+
+  div#links
+  {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}

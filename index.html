@@ -4,19 +4,20 @@
   <title> Sarah Rosanna Busch </title>
   <meta charset='UTF-8'> <!-- 16-bit Unicode -->
   <meta name='author' content='Sarah Rosanna Busch'>
-  <meta name='description' content="Links to and descriptions of all my work on gitHub.">
+  <meta name='description' content='Signature for my web content.'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- for responsive design -->
+  <link rel='stylesheet' href='footer.css'>
   <link rel='stylesheet' href='styles.css'>
   <link rel='icon shortcut' href='icon.png'>
   <!-- Google Analytics -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-81192188-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-81192188-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </head>
 <body>
   <div id='profile'>
@@ -108,33 +109,67 @@
         </g>
       </svg>
     </div>
-    <h2> Name: Sarah Rosanna Busch </h2>
-    <h3> Born: Canada, 1985 </h3>
-    <h3> Diploma 1: Chemical Engineering Technology </h3>
-    <h3> Diploma 2: Computer and Electronics Engineering Technology </h3>
-    <p>
+    <table>
+      <tr>
+        <th> Name: </th>
+        <td> Sarah Rosanna Busch </td>
+      </tr>
+      <tr>
+        <th> Email: </th>
+        <td> annarose0113@gmail.com </td>
+      </tr>
+      <tr>
+        <th> Born: </th>
+        <td> Canada (1985) </td>
+      </tr>
+      <tr>
+        <th> Diploma (2009): </th>
+        <td> Chemical Engineering Technology </td>
+      </tr>
+      <tr>
+        <th> Diploma (2017): </th>
+        <td> Computer and Electronics Engineering Technology </td>
+      </tr>
+      <tr>
+        <th> Languages: </th>
+        <td> English, French </td>
+      </tr>
+      <tr>
+        <th> Citizenships: </th>
+        <td> Canadian, Swiss </td>
+      </tr>
+      <tr>
+        <th> Special Skills: </th>
+        <td> Piano, Graphic Design and Illustration, House Painting, Hearthstone </td>
+      </tr>
+    </table>
+    <br>
+  </div>
+  <div id='links'>
+    <p id='intro'>
       Welcome to my gitHub hub! The place where you can find links to all of the stuff
       I've made that's on the Internet.
     </p>
     <br>
-  </div>
-  <div id='links'>
-    <a href='http://budgieblog.ca/'> Budgie Blog </a>
-    <p>
+    <a onmouseover='showP("budgie")' onmouseout='hideP("budgie")'
+      class='a' href='http://budgieblog.ca/'> Budgie Blog </a>
+    <p id='budgie' class='p'>
       This is the most recent website I created, using html5, css3, and javascript.
       My goal here was to learn excellent responsive design techniques to create
       websites that look good on any device.
     </p>
-    <br>
-    <a href='http://annarose0113.wixsite.com/sarahrosannabusch'> Resume and Portfolio </a>
-    <p>
-      I built a resume and portfolio site using Wix because it's a quick and easy
+    <br><br>
+    <a onmouseover='showP("resume")' onmouseout='hideP("resume")'
+      class='a' href='http://annarose0113.wixsite.com/sarahrosannabusch'> Resumé and Portfolio </a>
+    <p id='resume' class='p'>
+      I built a resumé and portfolio site using Wix because it's a quick and easy
       way to post pdfs of my academic projects. You can find out a bit about my
       experience as a chemist, construction worker, electronics student, and more.
     </p>
-    <br>
-    <a href='https://sarahrosannabusch.github.io/solarPlant/'> IoT Solar Plant </a>
-    <p>
+    <br><br>
+    <a onmouseover='showP("solar")' onmouseout='hideP("solar")'
+      class='a' href='https://sarahrosannabusch.github.io/solarPlant/'> IoT Solar Plant </a>
+    <p id='solar' class='p'>
       This was a second year electronics project where I designed a micro solar farm
       that was controlled by a Netduino which also acted as a web server (using NeonMika)
       hosting a website that interacted with the solar farm. The website allowed
@@ -144,9 +179,10 @@
       I hadn't realized yet that I can just add svg code directly to my html, so
       all the images are png files, which take a long time to load off the Netduino.
     </p>
-    <br>
-    <a href='https://sarahrosannabusch.github.io/flowerPot/'> IoT Flower Pot </a>
-    <p>
+    <br><br>
+    <a onmouseover='showP("flower")' onmouseout='hideP("flower")'
+      class='a' href='https://sarahrosannabusch.github.io/flowerPot/'> IoT Flower Pot </a>
+    <p id='flower' class='p'>
       This is a project I'm currently working on to help me stop killing my house
       plants. I have started testing it with a simple moisture sensor made of two
       nails connected to a Netduino. It's working quite well, so now I need to learn
@@ -154,25 +190,28 @@
       to a demo site that shows how the svg works. I inserted the svg code (images
       and graphics) directly into the html so the page loads quickly off the Netduino!
     </p>
-    <br>
-    <a href='https://github.com/sarahRosannaBusch/skl'> Shoot Kill Loot </a>
-    <p>
+    <br><br>
+    <a onmouseover='showP("skl")' onmouseout='hideP("skl")'
+      class='a' href='https://github.com/sarahRosannaBusch/skl'> Shoot Kill Loot </a>
+    <p id='skl' class='p'>
       This is a game that I started making over the Christmas holidays last year.
       I was making it using canvas and png images, as is recommended everywhere,
       but I'm finding it frustrating so I want to try doing it all with svg instead.
       Also, be warned, there is no loot yet, but you can shoot and kills things ;)
     </p>
-    <br>
-    <a href='https://sites.google.com/site/projectnoosphere/'> Project Noosphere </a>
-    <p>
+    <br><br>
+    <a onmouseover='showP("io")' onmouseout='hideP("io")'
+      class='a' href='https://sites.google.com/site/projectnoosphere/'> Project Noosphere </a>
+    <p id='io' class='p'>
       I created this website a couple years before I started studying electronics
       or coding, using Google Sites (which kinda sucks fyi), to share a comic strip
       I made. I drew the comic using Adobe Illustrator, but when I switched to Inkscape
       (which I like better) I ended up abandonning the project.
     </p>
-    <br>
+    <br><br><br>
   </div>
   <div id='footer'></div>
 </body>
-<script src='scripts.js'> </script>
+<script src='footer.js'></script>
+<script src='scripts.js'></script>
 </html>

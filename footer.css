@@ -1,0 +1,95 @@
+* /* padding and border are included in total width and height of elements */
+{
+    box-sizing: border-box;
+}
+
+/****************************** Footer Styles *********************************/
+
+div#footer
+{
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0px;
+  background: lavender; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(lavender, rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(lavender, rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(lavender, rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(lavender, rgba(0, 0, 0, 0)); /* Standard syntax */
+
+}
+
+hr.footer
+{
+  height: 3px;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  background-color: dimgrey;
+  border: 0 none;
+}
+
+p.footer
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  margin: 0px;
+  padding: 2px;
+}
+
+a.footer:link
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
+}
+
+a.footer:visited
+{
+  color: black;
+  text-align: center;
+  font-family: monospace;
+  font-size: 13px;
+  posiition: absolute;
+  text-decoration: none;
+}
+
+svg#flower
+{
+  width: 103px; /* 103px */
+  height: auto; /* 69px */
+  position: absolute;
+  padding: 3px;
+}
+
+g#orange
+{
+  visibility: hidden;
+}
+
+g#purple
+{
+  visibility: hidden;
+}
+
+g#green
+{
+  visibility: hidden;
+}
+
+/* default styles are for phone-sized screens; layout is responsive: */
+
+@media only screen and (min-width: 600px) /* tablet-sized */
+{
+
+}
+
+@media only screen and (min-width: 850px) /* full-screen */
+{
+
+}
