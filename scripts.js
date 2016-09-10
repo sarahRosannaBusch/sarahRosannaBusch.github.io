@@ -1,9 +1,7 @@
 function showP(p)
 {
-  document.getElementById(p).className = 'visible';
-}
-
-function hideP(p)
-{
-  document.getElementById(p).className = 'p';
+  if(document.getElementById(p).className === 'visible')
+    document.getElementById(p).className = 'hidden';
+  else
+    document.getElementById(p).className = 'visible';
 }

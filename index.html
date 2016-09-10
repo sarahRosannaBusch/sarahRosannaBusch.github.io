@@ -146,68 +146,89 @@
     <br>
   </div>
   <div id='links'>
+    <br><hr>
+    <h1> Welcome to my gitHub hub! </h1>
     <p id='intro'>
-      Welcome to my gitHub hub! The place where you can find links to all of the stuff
+      The place where you can find links to all of the stuff
       I've made that's on the Internet.
     </p>
+    <hr>
     <br>
-    <a onmouseover='showP("budgie")' onmouseout='hideP("budgie")'
-      class='a' href='http://budgieblog.ca/'> Budgie Blog </a>
-    <p id='budgie' class='p'>
-      This is the most recent website I created, using html5, css3, and javascript.
-      My goal here was to learn excellent responsive design techniques to create
-      websites that look good on any device.
-    </p>
-    <br><br>
-    <a onmouseover='showP("resume")' onmouseout='hideP("resume")'
-      class='a' href='http://annarose0113.wixsite.com/sarahrosannabusch'> Resumé and Portfolio </a>
-    <p id='resume' class='p'>
-      I built a resumé and portfolio site using Wix because it's a quick and easy
-      way to post pdfs of my academic projects. You can find out a bit about my
-      experience as a chemist, construction worker, electronics student, and more.
-    </p>
-    <br><br>
-    <a onmouseover='showP("solar")' onmouseout='hideP("solar")'
-      class='a' href='https://sarahrosannabusch.github.io/solarPlant/'> IoT Solar Plant </a>
-    <p id='solar' class='p'>
-      This was a second year electronics project where I designed a micro solar farm
-      that was controlled by a Netduino which also acted as a web server (using NeonMika)
-      hosting a website that interacted with the solar farm. The website allowed
-      you to control two LEDs that were powered by solar panels. It also provided
-      real time current and voltage monitoring of the circuit. I've disconnected
-      actual circuit now, but this link shows you a demo of how the site worked.
-      I hadn't realized yet that I can just add svg code directly to my html, so
-      all the images are png files, which take a long time to load off the Netduino.
-    </p>
-    <br><br>
-    <a onmouseover='showP("flower")' onmouseout='hideP("flower")'
-      class='a' href='https://sarahrosannabusch.github.io/flowerPot/'> IoT Flower Pot </a>
-    <p id='flower' class='p'>
-      This is a project I'm currently working on to help me stop killing my house
-      plants. I have started testing it with a simple moisture sensor made of two
-      nails connected to a Netduino. It's working quite well, so now I need to learn
-      the server side of things to start collecting and storing data. This link is
-      to a demo site that shows how the svg works. I inserted the svg code (images
-      and graphics) directly into the html so the page loads quickly off the Netduino!
-    </p>
-    <br><br>
-    <a onmouseover='showP("skl")' onmouseout='hideP("skl")'
-      class='a' href='https://github.com/sarahRosannaBusch/skl'> Shoot Kill Loot </a>
-    <p id='skl' class='p'>
-      This is a game that I started making over the Christmas holidays last year.
-      I was making it using canvas and png images, as is recommended everywhere,
-      but I'm finding it frustrating so I want to try doing it all with svg instead.
-      Also, be warned, there is no loot yet, but you can shoot and kills things ;)
-    </p>
-    <br><br>
-    <a onmouseover='showP("io")' onmouseout='hideP("io")'
-      class='a' href='https://sites.google.com/site/projectnoosphere/'> Project Noosphere </a>
-    <p id='io' class='p'>
-      I created this website a couple years before I started studying electronics
-      or coding, using Google Sites (which kinda sucks fyi), to share a comic strip
-      I made. I drew the comic using Adobe Illustrator, but when I switched to Inkscape
-      (which I like better) I ended up abandonning the project.
-    </p>
+    <h2> Budgie Blog
+      <span class='ellipses' onclick='showP("budgie")'> ... </span>
+    </h2>
+      <a class='a' href='http://budgieblog.ca/' target='_blank'>
+        budgieblog.ca</a>
+      <p id='budgie' class='hidden' onclick='showP("budgie")'>
+        This is the most recent website I've created using html5, css3, and javascript.
+        My goal here was to learn excellent responsive design techniques to create
+        websites that look good on any device.
+      </p>
+    <br>
+    <h2> Resumé and Portfolio
+      <span class='ellipses' onclick='showP("resume")'> ... </span>
+    </h2>
+      <a class='a' href='http://annarose0113.wixsite.com/sarahrosannabusch' target='_blank'>
+        annarose0113.wixsite.com/sarahrosannabusch</a>
+      <p id='resume' class='hidden' onclick='showP("resume")'>
+        I built a resumé and portfolio site using Wix because it's a quick and easy
+        way to post pdfs of my academic projects. You can find out a bit about my
+        experience as a chemist, construction worker, electronics student, and more.
+      </p>
+    <br>
+    <h2> IoT Solar Plant
+      <span class='ellipses' onclick='showP("solar")'> ... </span>
+    </h2>
+      <a class='a' href='https://sarahrosannabusch.github.io/solarPlant/' target='_blank'>
+        sarahrosannabusch.github.io/solarPlant/</a>
+      <p id='solar' class='hidden' onclick='showP("solar")'>
+        This was a second year electronics project where I designed a micro solar farm
+        that was controlled by a Netduino which also acted as a web server (using NeonMika)
+        hosting a website that interacted with the solar farm. The website allowed
+        you to control two LEDs that were powered by solar panels. It also provided
+        real time current and voltage monitoring of the circuit. I've disconnected
+        actual circuit now, but this link shows you a demo of how the site worked.
+        I hadn't realized yet that I can just add svg code directly to my html, so
+        all the images are png files, which take a long time to load off the Netduino.
+      </p>
+    <br>
+    <h2> IoT Flower Pot
+      <span class='ellipses' onclick='showP("flower")'> ... </span>
+    </h2>
+      <a class='a' href='https://sarahrosannabusch.github.io/flowerPot/' target='_blank'>
+        sarahrosannabusch.github.io/flowerPot/</a>
+      <p id='flower' class='hidden' onclick='showP("flower")'>
+        This is a project I'm currently working on to help me stop killing my house
+        plants. I have started testing it with a simple moisture sensor made of two
+        nails connected to a Netduino. It's working quite well, so now I need to learn
+        the server side of things to start collecting and storing data. This link is
+        to a demo site that shows how the svg works. I inserted the svg code (images
+        and graphics) directly into the html so the page loads quickly off the Netduino!
+      </p>
+    <br>
+    <h2> Shoot Kill Loot
+      <span class='ellipses' onclick='showP("skl")'> ... </span>
+    </h2>
+      <a class='a' href='https://sarahrosannabusch.github.io/skl/' target='_blank'>
+        sarahrosannabusch.github.io/skl/</a>
+      <p id='skl' class='hidden' onclick='showP("skl")'>
+        This is a game that I started making over the Christmas holidays last year.
+        I was making it using canvas and png images, as is recommended everywhere,
+        but I'm finding it frustrating so I want to try doing it all with svg instead.
+        Also, be warned, there is no loot yet, but you can shoot and kills things ;)
+      </p>
+    <br>
+    <h2> Project Noosphere
+      <span class='ellipses' onclick='showP("io")'> ... </span>
+    </h2>
+      <a class='a' href='https://sites.google.com/site/projectnoosphere/' target='_blank'>
+        sites.google.com/site/projectnoosphere/</a>
+      <p id='io' class='hidden' onclick='showP("io")'>
+        I created this website a couple years before I started studying electronics
+        or coding, using Google Sites (which kinda sucks fyi), to share a comic strip
+        I made. I drew the comic using Adobe Illustrator, but when I switched to Inkscape
+        (which I like better) I ended up abandonning the project.
+      </p>
     <br><br><br>
   </div>
   <div id='footer'></div>
