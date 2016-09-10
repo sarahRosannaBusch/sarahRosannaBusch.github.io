@@ -61,6 +61,7 @@ div#links
   width: 90%;
   margin: auto;
   text-align: right;
+  overflow-x: hidden;
 }
 
 h1
