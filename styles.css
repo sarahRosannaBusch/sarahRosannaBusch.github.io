@@ -85,7 +85,7 @@ p#intro
   margin-top: 0px;
 }
 
-hr
+hr.hr
 {
   border-color: silver;
   box-shadow: 1px 1px 1px black;
@@ -153,25 +153,32 @@ a.a:hover
 
 /* default styles are for phone-sized screens; layout is responsive: */
 
-@media only screen and (min-width: 600px) /* tablet-sized */
+@media only screen and (min-width: 825px) /* tablet-sized */
 {
+    div#profile
+    {
+      max-width: 375px;
+      float: left;
+      margin: 20px;
+    }
 
+    div#links
+    {
+      width: 40%;
+      float: left;
+      margin-left: 20px;
+    }
 }
 
-@media only screen and (min-width: 850px) /* full-screen */
+@media only screen and (min-width: 1000px) /* full-screen */
 {
   div#profile
   {
-    max-width: 375px;
-    float: left;
-    margin: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
   }
-
   div#links
   {
-    width: 40%;
-    float: left;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 50%;
   }
 }
